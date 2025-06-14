@@ -19,7 +19,6 @@ function Table() {
 					<th>✔️ Завершено</th>
 					<th>📝 Назва Задачі</th>
 					<th>⚡ Пріоритет</th>
-					<th>📅 Дедлайн</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -39,13 +38,6 @@ function Table() {
 							<option>Низький</option>
 						</select>
 					</td>
-					<td>
-						<input
-							type="date"
-							className="task-deadline"
-							defaultValue="2025-06-20"
-						/>
-					</td>
 				</tr>
 				<tr className="task-row">
 					<td>
@@ -62,13 +54,6 @@ function Table() {
 							<option>Високий</option>
 							<option>Низький</option>
 						</select>
-					</td>
-					<td>
-						<input
-							type="date"
-							className="task-deadline"
-							defaultValue="2025-06-22"
-						/>
 					</td>
 				</tr>
 			</tbody>

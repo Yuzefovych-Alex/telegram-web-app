@@ -1,0 +1,33 @@
+.add-task-panel {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-task-name,
+.task-priority {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 150px;
+}
+
+.add-task-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.add-task-button:hover {
+  background-color: #43a047;
+}
