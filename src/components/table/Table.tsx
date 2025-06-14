@@ -19,7 +19,7 @@ const Table: React.FC = () => {
 	useEffect(() => {
 		const fetchTasks = async () => {
 			try {
-				const res = await axios.get<Task[]>("http://localhost:5000/api/tasks");
+				const res = await axios.get<Task[]>("http://172.20.10.3:5000/api/tasks");
 				setTasks(res.data);
 			} catch (err) {
 				console.error("Помилка при отриманні задач:", err);
@@ -34,7 +34,7 @@ const Table: React.FC = () => {
 
 	const updateTask = async (taskId: number, updatedFields: Partial<Task>) => {
 		try {
-			await axios.patch(`http://localhost:5000/api/tasks/${taskId}`, updatedFields);
+			await axios.patch(`http://172.20.10.3:5000/api/tasks/${taskId}`, updatedFields);
 			setTasks(prev =>
 				prev.map(task =>
 					task.id === taskId ? { ...task, ...updatedFields } : task
